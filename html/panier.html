@@ -20,7 +20,82 @@
     </header>
     <main class="content">
       <h1 class="content__title">Votre panier <strong class="italic">2 produits</strong></h1>
-      Tableau et formulaire
+      <div class="wrapper">
+        <form action="panier.html">
+
+          <section class="gutter">
+            <h2 class="wrapper__title">Préférence de livraison</h2>
+            <div class="colums">
+              <div class="colums__child">
+                <fieldset>
+                  <div class="legend">
+                    <legend class="legend__title">Où souhaitez-vous être livré ?</legend>
+                  </div>
+                  <div class="field">
+                    <input name="address" value="Mon adresse courante" type="radio" id="adresse-courante">
+                    <label for="adresse-courante">Mon adresse courante</label>
+                  </div>
+                  <div class="field">
+                    <input name="address" value="Autre adresse" type="radio" id="autre-adresse">
+                    <label for="autre-adresse">Autre adresse</label>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="legend">
+                    <legend class="legend__title">Options</legend>
+                  </div>
+                  <div class="field">
+                    <input checked disabled name="options" value="Suivi de livraison" id="suivi" type="checkbox"> <label for="suivi">Suivi de livraison (inclus)</label>
+                  </div>
+                  <div class="field">
+                    <input name="options" value="Satisfait ou remboursé" id="satisfait" type="checkbox"> <label for="satisfait">Satisfait ou remboursé (+2 euros)</label>
+                  </div>
+                  <div class="field">
+                    <input name="options" value="Garantie 2 ans" id="garantie" type="checkbox"> <label for="garantie">Garantie 2 ans (+10 euros)</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="columns__child">
+                <fieldset>
+                  <div class="legend">
+                    <legend class="legend__title">Adresse</legend>
+                  </div>
+                  <!-- (.field>label+input)*3 (CTRL ESPACE pour interpréter un raccourci emmet) -->
+                  <div class="field">
+                    <label class="field__label" for="rue">Rue</label>
+                    <input class="field__input" name="street" id="rue" type="text">
+                  </div>
+                  <div class="field">
+                    <label class="field__label" for="code-postal">Code postal</label>
+                    <input class="field__input" name="zipcode" id="code-postal" type="text">
+                  </div>
+                  <div class="field">
+                    <label class="field__label" for="ville">Ville</label>
+                    <input class="field__input" name="city" id="ville" type="text">
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <div class="legend">
+                    <legend class="legend__title">Informations complémentaires</legend>
+                  </div>
+                  <label class="field__label" for="infos">Interphone, batiment, etc</label>
+                  <textarea class="field__input" id="infos" name="infos"></textarea>
+                </fieldset>
+              </div>
+              
+            </div>
+            </div>
+          </section>
+
+          <div class="wrapper__actions">
+            <a href="#" class="button">Continuer vos achats</a>
+            <button class="button button__alt" type="submit">Valider et payer</button>
+          </div>
+
+        </form>
+      </div>
     </main>
     <footer class="footer">
       <p>oFig - toutes les images sont sous copyright SquareEnix</p>
