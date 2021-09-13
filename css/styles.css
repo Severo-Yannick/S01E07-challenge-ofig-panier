@@ -1,0 +1,37 @@
+body {
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.header {
+  background-color: #C80000;
+  padding: 20px;
+}
+.logo__name {
+  font-size: 2em;
+  font-weight: bold;
+  color: #FFF;
+  margin-right: 5px;
+}
+.logo__suffix {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.content__title {
+  background-color: #666;
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}
+.italic {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.footer {
+  background-color: #666;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+}  
