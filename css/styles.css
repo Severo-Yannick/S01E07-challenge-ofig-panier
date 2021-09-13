@@ -1,5 +1,13 @@
+html {
+  font-size: 1.2em;
+  --gutter: 0.8rem;
+  --main-color: #5485ee;
+  --alt-color: #16409b;
+}
+
 body {
   font-family: 'Raleway', 'sans-serif';
+  line-height: 1.3em;
 }
 
 .header {
@@ -28,6 +36,79 @@ body {
   font-size: 1.1em;
   font-style: italic;
 }
+
+/* Styles du Panier */
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+.field {
+  margin: 0.3rem 0;
+  
+}
+.field__label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.field__input {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #EEE;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+textarea.field__input {
+  height: 80px;
+}
+.field__input:focus {
+  background-color: #CCC;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+.columns__child {
+  width: calc(50% - 0.5rem);
+}
+.wrapper__title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: grey;
+  margin: 1rem 0;
+}
+.gutter {
+  padding:0 1rem;
+}
+.wrapper__actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+}
+.button {
+  padding: 1rem;
+  background-color: #EEE;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border: 0;
+}
+.button--alt {
+  background-color: var(--main-color);
+  color: white;
+}
+.button:hover {
+  background-color: var(--alt-color);
+  color: white;
+}  
+
 
 .footer {
   background-color: #666;
