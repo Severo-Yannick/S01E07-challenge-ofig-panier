@@ -19,10 +19,60 @@
       </a>
     </header>
     <main class="content">
-      <h1 class="content__title">Votre panier <strong class="italic">2 produits</strong></h1>
-      <div class="wrapper">
-        <form action="panier.html">
+      <form action="panier.html">
+        <h1 class="content__title">Votre panier <strong class="italic">2 produits</strong></h1>
+        <div class="wrapper">
+          <!-- Board -->
+          <section class="gutter">
+            <h2 class="wrapper__title">Votre panier</h2>
+            <table class="cart">
+              <thead>
+                <tr>
+                  <th>Figurine</th>
+                  <th>Prix unitaire</th>
+                  <th>Quantité</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cloud strife</td>
+                  <td>59 €</td>
+                  <td>
+                    <input class="cart__quantity" name="cloud-quantity" min="0" type="number" value="1">
+                    <a class="cart__delete" href="chemin/suppression">supprimer</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tifa Lockhart</td>
+                  <td>69 €</td>
+                  <td>
+                    <input class="cart__quantity" name="tifa-quantity" min="0" type="number" value="1">
+                    <a class="cart__delete" href="chemin/suppression">supprimer</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Barrett Wallace</td>
+                  <td>69 €</td>
+                  <td>
+                    <input class="cart__quantity" name="barrett-quantity" min="0" type="number" value="1">
+                    <a class="cart__delete" href="chemin/suppression">supprimer</a>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="cart__total" colspan="2">
+                    Total de la commande
+                  </td>
+                  <td class="cart__price">
+                    197 €
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
 
+          <!-- Form -->
           <section class="gutter">
             <h2 class="wrapper__title">Préférence de livraison</h2>
             <div class="columns">
