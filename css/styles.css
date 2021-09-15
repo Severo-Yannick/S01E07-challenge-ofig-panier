@@ -10,6 +10,12 @@ body {
   line-height: 1.3em;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   background-color: var(--main-color);
   padding: 20px;
@@ -160,4 +166,30 @@ textarea.field__input {
   color: #FFF;
   text-align: center;
   padding: 20px;
-}  
+}
+
+@media (min-width: 580px) {
+  .header {
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px), (max-height: 500px) {
+  .header {
+    position: static;
+  }
+  .content {
+    margin-top: 0;
+  }
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .columns__child {
+    width: calc(100% - 0.5rem);
+  }
+  .button {
+  width: 50%;
+  }
+
+} 
