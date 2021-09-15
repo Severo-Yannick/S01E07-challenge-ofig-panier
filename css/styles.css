@@ -206,3 +206,6 @@ textarea.field__input {
   }
 
 } 
+
+
+tr:nth-child(even) {background: #EEE}
